@@ -7,8 +7,10 @@ import { connectDB } from "./db/db.js";
 
 const port = process.env.PORT || 5000
 
+
+
 connectDB().then(() => {
-    app.listen(() => {
+    app.listen(port, () => {
         console.log(`the server is running on port ${port}`);
     })
 }).catch((err) => {
