@@ -1,5 +1,6 @@
 import { Todo } from './../db/models/todo.models.js';
 
+
 // Get all todos
 const getAllTodos = async (req, res) => {
     try {
